@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+    
+    
+    padding: 10px;
+    font-style: italic;
+    font-family: 'Times New Roman';
+
+
+    position: absolute;   /* fixed umjesto absolute-a ako hocu da top bar prati dok user scrolla prema dole */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 40px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  
+  
+  nav li a {
+    display: block;
+    color: rgb(184, 128, 64);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+
+  .navhr {
+    border-color: rgb(184, 128, 64);
+  }
+  
+  nav li a:hover {
+    color: #F5DEB3; /* Change the text color to the golden color on hover */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7a747a, 0 0 30px #7a747a, 0 0 40px rgb(184, 128, 64), 0 0 50px rgb(184, 128, 64);
+    
+  }
+
+
+
+
+  .main  {
+    background-color: #221f1a; /* Set the background color to a light golden color */
+    
+  }
+
+
+  nav ul li:first-child {
+    float: left;
+    
+  }
+  
+  nav ul li:not(:first-child) {
+    float:right;
+    display: inline-block;
+    margin-left: 20px;
+    
+  }
+
+ 
+
+  .picture-section {
+    background-image: url("../slike/test.png");
+    background-size: cover;
+    
+    
+    
+    
+    padding-top: 800px;
+    
+    
+  }
+
+  .carousel {
+    bottom: 100px;
+    
+  }
+
+ 
+
+  section#about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-style: italic;
+    font-family: 'Times New Roman';
+    color: rgb(184, 128, 64);
+    background-color: #09080d;
+ 
+  }
+  
+  section#about h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-right: 100px;
+  }
+  
+  section#about p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 1em;
+    margin-right: 100px;
+    
+  }
+
+  .p1:hover  , .p2:hover , .p3:hover , .p4:hover , .p5:hover{
+    color: #F5DEB3; /* Change the text color to the golden color on hover */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f8f6f8, 0 0 30px #ddd8dd, 0 0 40px rgb(184, 128, 64), 0 0 50px rgb(184, 128, 64);
+    
+    
+  }
+
+
+  /** ****************REVIEWS****************************** **/
+
+
+  .reviews {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filter {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .review-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .review {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .selected {
+    background-color: yellow;
+  }
+  
+  .about {
+    background-image: url("../slike/test.png");
+    background-size: cover
+  }
+
+  /***********************************GALERIJA ------- PRVA STRANICA *************************************/
+
+  #myCarousel {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    
+  }
+
+  #carousel1 {
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+    bottom: 300px;
+  }
+
+
+  .Hgalerija {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(184, 128, 64);
+    font-style: italic;
+    font-family: 'Times New Roman';
+    font-size: 4em;
+  }
+
+  .Pgalerija {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(184, 128, 64);
+    font-style: italic;
+    font-family: 'Times New Roman';
+    font-size: 1.5em;
+  }
+
+  .Hgalerija:hover , .Pgalerija:hover{
+    color: #F5DEB3; /* Change the text color to the golden color on hover */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f8f6f8, 0 0 30px #ddd8dd, 0 0 40px rgb(184, 128, 64), 0 0 50px rgb(184, 128, 64);
+    
+    
+  }
+
+
+  /********************************** Menu ******************/
+
+
+
+  .menu-item {
+    padding: 10px 0; /* Increased padding for more space inside each item */
+    margin-bottom: 10px; /* Increased space between items */
+}
+
+.menu-price {
+  padding: 25px;
+  margin: 10px;
+  
+}
+
+  
+
+  section#popular {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-style: italic;
+    font-family: 'Times New Roman';
+    color: rgb(184, 128, 64);
+    background-color: #07070a;
+ 
+  }
+
+  .module-title:hover {
+    color: #F5DEB3; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f8f6f8, 0 0 30px #ddd8dd, 0 0 40px rgb(184, 128, 64), 0 0 50px rgb(184, 128, 64);
+
+  }
+
+  .menu-item:hover {
+    color: #F5DEB3; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f8f6f8, 0 0 30px #ddd8dd, 0 0 40px rgb(184, 128, 64), 0 0 50px rgb(184, 128, 64);
+
+  }
+  
+
+
+  /**************** rezerviraj stol *******************/
+
+  
+
+  .banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../slike/mainBg.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fcf7f7;
+    padding-bottom: 20px;
+   
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+.card-img{
+    background: url("../slike/test.png") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fdfbfb;
+    height: 380px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid  rgb(184, 128, 64);;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #0a0a0a;
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+form input[type = submit]{
+    color: rgb(184, 128, 64);
+    background: rgb(58, 56, 56);
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+
+.banner{
+  color: rgb(184, 128, 64);
+  font-family: 'Times New Roman';
+    font-style: italic;
+}
+
+.card-content h3 {
+  color: rgb(184, 128, 64);
+  font-family: 'Times New Roman';
+  font-style: italic;
+}
+
+/***************** FOOTER ***********************/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: rgb(184, 128, 64);
+  font-family: 'Times New Roman';
+  font-style: italic;
+  font-size: 30px;
+  padding-left: 170px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+background: rgb(187,184,236);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgb(43, 42, 42) 100%);
+}
+
+.footer-row {
+  flex: 1;
+}
+
+
+
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+
+/* button za povratak na top */
+
+#btnTop {
+  display:none;    /* sakriveno na pocetku */
+  position:fixed;  /* sticky - ne mice se */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:  rgb(184, 128, 64);; /* Set a background color */
+  color: rgb(8, 8, 8); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  width: 50px;
+
+}
+  
+#btnTop:hover {
+  background-color: #f1eeee; /* Add a dark-grey background on hover */
+}
+ 
+
+
+.filter {
+  cursor: pointer;
+  font-size: 24px; /* Size of the stars */
+  color: #ddd; /* Default color (unselected stars) */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.filter.active, .filter:hover {
+  color: rgb(184, 128, 64);;
+}
+
+.filter:hover {
+  color: rgb(184, 128, 64);;
+}
+
+
+
+ 
+
+ 
+
+  
+
+  
+
