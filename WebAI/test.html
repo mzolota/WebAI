@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        .test-container {
+            margin: 50px;
+        }
+        .test-item {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .test-content {
+            display: none;
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <div class="test-item">Click me</div>
+        <div class="test-content">This is the content that will be shown or hidden.</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.test-item').on('click', function() {
+                $('.test-content').fadeToggle(1000);
+            });
+        });
+    </script>
+</body>
+</html>

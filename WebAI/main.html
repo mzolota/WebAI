@@ -37,7 +37,7 @@
 
       
       
-          <section>
+    </section>
 
 
             
@@ -152,11 +152,11 @@
        <!-- MENU DIO STRANICE -->
 
 
-      <section id="popular" class="module">
+      
+
+       <section id="popular" class="module">
         <div class="container">
-            <div class="module-header wow fadeInUp animated">
                 <h1 class="module-title text-center">Menu</h1>
-            </div>
             <!-- This div will hold the dynamically generated menu items -->
             <div id="menu-container" class="row"></div>
         </div>
@@ -219,18 +219,30 @@
       
     
 
-      <div class="footer-row work-hours">
-        <p>Radno vrijeme: <br></p>
+      <div class="footer-row work-hours" , id="work-hours">
+        <h2>Radno vrijeme: <br></h2>
         <p>Ponedjeljak - Petak 10 : 22.30 </p>
         <p>Subota 10 : 1.30</p>
         <p>Nedjelja 10 : 00 </p>
       </div>
-      <div class="footer-row contact-info">
-        <p>Adresa: Ul. Stjepana Radića 2B, Pula</p>
+      <div class="footer-row contact-info",id="contact-info">
+       
         <p>Kontakt : 052 565 321</p>
-        <p>Način plaćanja: gotovina , mastercard , visa </p>
-        <p> <a href="#banner">Iznajmite stol</a> </p>
+        <p>Način plaćanja: gotovina , kreditna kartica </p>
+        <p> Ul. Silvija Strahimira Kranjčevića 8 </p>
       </div>
+
+      <div class="footer-row maps"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.054170499572!2d13.84283235480674!3d44.86119198553525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477cd3180b907d4f%3A0x6873a68a0153276!2sUl.%20Silvija%20Strahimira%20Kranj%C4%8Devi%C4%87a%208%2C%2052100%2C%20Pula!5e0!3m2!1shr!2shr!4v1726580982546!5m2!1shr!2shr" 
+       width="400" 
+       height="250" 
+       style="border:0;" 
+       allowfullscreen="" 
+       loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      </div>
+
       
       <div class="footer-row social-media">
         <ul class="wrapper">
@@ -259,6 +271,7 @@
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="./script.js"></script>
 </html>

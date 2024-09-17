@@ -89,7 +89,7 @@ const menuItems = [
     title:"Dimljeni losos s krem sirom",
     description:"Komadići dimljenog lososa posluženi na tostu s krem sirom ",
     price:"€20"
-  }
+  },
   // po potrebi dodat jos jela
 
 
@@ -98,34 +98,50 @@ const menuItems = [
 
 ];
 
-// Function za generiranje menu- itema
 
+
+
+
+
+// Function to generate and add menu items to the page
 function generateMenu() {
-  const menuContainer = document.getElementById('menu-container');
-
+  const container = document.getElementById('menu-container');
   menuItems.forEach(item => {
-      // Create a menu item div
-      const menuItem = document.createElement('div');
-      menuItem.classList.add('menu-item', 'row', 'dropdown'); // Add dropdown class for hover
-
-      // Create inner HTML for each item
-      menuItem.innerHTML = `
-          <div class="col-sm-8">
-              <h4 class="menu-title">${item.title}</h4>
-              <p class="menu-description">${item.description}</p>
-          </div>
-          <div class="col-sm-4 text-right">
-              <h4 class="menu-price">${item.price}</h4>
-          </div>
-      `;
-
-      // Append the new menu item to the container
-      menuContainer.appendChild(menuItem);
+    const menuItem = document.createElement('div');
+    menuItem.classList.add('menu-item');
+    
+    menuItem.innerHTML = `
+      <div class="menu-title">${item.title}</div>
+      <div class="menu-price">Cijena: ${item.price}</div>
+      <div class="menu-description">${item.description}</div>
+    `;
+    
+    container.appendChild(menuItem);
   });
 }
 
-// Call the function to generate the menu
-generateMenu();
+
+
+
+// Initialize menu and jQuery interactions
+$(document).ready(function() {
+  generateMenu();
+
+  $('.menu-item').on('click', function() {
+    const $this = $(this);
+    const isExpanded = $this.hasClass('expanded');
+    $('.menu-item').removeClass('expanded')
+      .find('.menu-description, .menu-price')
+    
+    if (!isExpanded) {
+      $this.addClass('expanded')
+        .find('.menu-description, .menu-price')
+    }
+  });
+});
+
+
+
 
 
 
